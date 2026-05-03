@@ -1,55 +1,35 @@
-# claude-skills
+# Playwright Test Sites
 
-Personal Claude Code skill library. Skills are loaded by the Claude Code CLI from `~/.claude/skills/` and made available as slash commands in any project.
+Public websites for testing Playwright automation and the `/playwright-tutorial-video` skill.
 
-## Setup
+## Sites
 
-Clone the repo, then run `setup.sh` once:
+### 1. Playwright Docs
+- **URL:** https://playwright.dev
+- **Good for:** navigation, search, docs browsing, anchor links
 
-```bash
-git clone https://github.com/wyn-twotabs/claude-skills.git ~/Documents/GitHub/claude-skills
-cd ~/Documents/GitHub/claude-skills
-bash setup.sh
-```
+### 2. The Internet (Heroku)
+- **URL:** https://the-internet.herokuapp.com
+- **Good for:** login, dropdowns, uploads, iframes, dynamic content, drag-and-drop
 
-This symlinks `~/.claude/skills/` → `claude-skills/skills/` so any `git pull` instantly updates all skills globally across every project.
+### 3. Playwright TodoMVC Demo
+- **URL:** https://demo.playwright.dev/todomvc
+- **Good for:** stable, predictable CRUD flows
 
-## Skills
+### 4. Sauce Demo
+- **URL:** https://www.saucedemo.com
+- **Good for:** end-to-end e-commerce — login, browse, cart, checkout
+- **Login:** `standard_user` / `secret_sauce`
 
-| Skill | Description |
-|---|---|
-| `software-tutorial-studio` | Generate narrated instructional tutorial videos for software platforms using Remotion + macOS TTS |
-| `video-creator` | General-purpose Remotion video creation with style guides and TTS providers |
-| `ui-flow-studio` | Build animated UI flow diagrams as Remotion videos |
-| `meme-factory` | Generate meme videos with Remotion and a Python generator script |
-| `remotion-best-practices` | Remotion patterns and best practices reference (animations, audio, captions, charts, fonts, etc.) |
-| `tailwindcss` | Tailwind CSS patterns for Remotion projects |
+## Interactive Recorder
 
-## Usage
-
-Once set up, skills are available as slash commands in Claude Code:
-
-```
-/software-tutorial-studio
-/video-creator
-/meme-factory
-```
-
-## Updating skills
+Record a manual browser flow with accurate element coordinates for Remotion highlight boxes:
 
 ```bash
-cd ~/Documents/GitHub/claude-skills
-git pull
+npx tsx scripts/interactive-record.ts <flow-slug> <start-url>
 ```
 
-Changes are immediately live — no restart needed.
+**Phase 1** — Browser opens, log in if needed, navigate to your start page, press Enter.  
+**Phase 2** — Recording starts. Every click is captured with its exact bounding box. Press Enter when done.
 
-## Adding a new skill
-
-```bash
-mkdir skills/my-skill
-# Create skills/my-skill/SKILL.md with frontmatter: name, description, metadata
-git add skills/my-skill
-git commit -m "feat: add my-skill"
-git push
-```
+Produces `public/recordings/<slug>/recording.webm` and `manifest.json` with pixel-perfect coordinates. Feed the manifest into the `/playwright-tutorial-video` skill with `Entry: from-manifest`.

@@ -1,0 +1,50 @@
+{
+  "sites": [
+    {
+      "name": "Playwright Docs",
+      "url": "https://playwright.dev",
+      "tags": ["docs", "navigation", "search"],
+      "suggested_flows": [
+        "Search for 'locators' and open the first result",
+        "Navigate Docs → API and expand a class",
+        "Switch language tabs (TypeScript/Python/Java/.NET)"
+      ]
+    },
+    {
+      "name": "The Internet",
+      "url": "https://the-internet.herokuapp.com",
+      "tags": ["forms", "uploads", "iframes", "dropdowns", "dynamic-content"],
+      "suggested_flows": [
+        "Form Authentication: login with tomsmith / SuperSecretPassword!",
+        "File Upload: upload a file and confirm success",
+        "Dynamic Loading: click Start and wait for hidden element",
+        "Drag and Drop: swap boxes A and B"
+      ]
+    },
+    {
+      "name": "Playwright TodoMVC Demo",
+      "url": "https://demo.playwright.dev/todomvc",
+      "tags": ["crud", "stable", "practice"],
+      "suggested_flows": [
+        "Add three todos, complete one, filter Active/Completed",
+        "Double-click to edit a todo, rename, blur to save",
+        "Clear completed and verify count"
+      ]
+    },
+    {
+      "name": "Sauce Demo",
+      "url": "https://www.saucedemo.com",
+      "credentials": {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "note": "Other usernames listed on the login page (e.g. locked_out_user, problem_user, performance_glitch_user) exhibit different behaviors."
+      },
+      "tags": ["ecommerce", "login", "cart", "checkout"],
+      "suggested_flows": [
+        "Login, sort by price low→high, add two items to cart",
+        "Checkout: fill shipping, complete order, see confirmation",
+        "Try locked_out_user to see the error path"
+      ]
+    }
+  ]
+}
