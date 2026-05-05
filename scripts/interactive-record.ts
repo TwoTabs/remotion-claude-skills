@@ -36,21 +36,54 @@ const VIDEO_FINAL   = path.join(RECORDING_DIR, 'recording.webm');
 const MANIFEST_PATH = path.join(RECORDING_DIR, 'manifest.json');
 const VIEWPORT      = { width: 1920, height: 1080 } as const;
 
-// ── readline helper ────────────────────────────────────────────────────────
+// Signal files — Claude creates these to advance phases instead of Enter
+const SIGNAL_START = path.join(RECORDING_DIR, '.ir-start');
+const SIGNAL_STOP  = path.join(RECORDING_DIR, '.ir-stop');
+
+// When stdin is not a TTY (e.g. run from Claude Code via Bash), use file signals
+const USE_SIGNALS = !process.stdin.isTTY;
+
+// ── wait helper — readline (terminal) or file signal (Claude Code) ─────────
+
+function waitForSignal(signalFile: string): Promise<void> {
+  return new Promise(resolve => {
+    const check = () => {
+      if (fs.existsSync(signalFile)) {
+        fs.unlinkSync(signalFile);
+        resolve();
+      } else {
+        setTimeout(check, 400);
+      }
+    };
+    check();
+  });
+}
 
 function prompt(msg: string): { promise: Promise<void>; cancel: () => void } {
   let rl: readline.Interface | null = null;
-  let resolve: () => void;
+  let resolved = false;
+  let resolve!: () => void;
   const promise = new Promise<void>(r => { resolve = r; });
 
   rl = readline.createInterface({ input: process.stdin, output: process.stdout });
   process.stdout.write(msg);
-  rl.once('line', () => { rl?.close(); rl = null; resolve(); });
+  rl.once('line', () => { rl?.close(); rl = null; if (!resolved) { resolved = true; resolve(); } });
 
   return {
     promise,
-    cancel: () => { rl?.close(); rl = null; resolve(); },
+    cancel: () => { rl?.close(); rl = null; if (!resolved) { resolved = true; resolve(); } },
   };
+}
+
+// Advance to the next phase — file signal in Claude mode, readline in terminal
+async function advance(signalFile: string, terminalMsg: string): Promise<() => void> {
+  if (USE_SIGNALS) {
+    await waitForSignal(signalFile);
+    return () => {};
+  }
+  const p = prompt(terminalMsg);
+  await p.promise;
+  return p.cancel;
 }
 
 // ── captured event types ───────────────────────────────────────────────────
@@ -74,19 +107,23 @@ interface RawNav {
 // ── phase 1: setup (no recording) ─────────────────────────────────────────
 
 async function setup(): Promise<{ storageState: Awaited<ReturnType<BrowserContext['storageState']>>; url: string }> {
+  fs.mkdirSync(RECORDING_DIR, { recursive: true });
+
   console.log('\n┌─────────────────────────────────────────────────────────┐');
-  console.log('│  🎭  Interactive Recorder                               │');
-  console.log('│                                                         │');
-  console.log('│  Phase 1 — Setup                                        │');
-  console.log('│  Log in if needed, then navigate to your start page.   │');
+  console.log('│  🎭  Interactive Recorder  —  Phase 1: Setup            │');
+  console.log('│  Browser is open. Log in and navigate to start page.    │');
   console.log('└─────────────────────────────────────────────────────────┘\n');
+
+  if (USE_SIGNALS) {
+    console.log(`  Signal files for this flow:`);
+    console.log(`    Start recording:  touch ${SIGNAL_START}`);
+    console.log(`    Stop recording:   touch ${SIGNAL_STOP}\n`);
+    console.log(`  Waiting for start signal…\n`);
+  }
 
   const browser = await chromium.launch({
     headless: false,
-    args: [
-      '--disable-infobars',
-      '--no-default-browser-check',
-    ],
+    args: ['--disable-infobars', '--no-default-browser-check'],
   });
 
   const ctx = await browser.newContext({ viewport: VIEWPORT });
@@ -94,8 +131,7 @@ async function setup(): Promise<{ storageState: Awaited<ReturnType<BrowserContex
 
   await page.goto(START_URL, { waitUntil: 'domcontentloaded' });
 
-  const { promise } = prompt('\n  ✅  Ready to record?  Press ENTER to start  › ');
-  await promise;
+  await advance(SIGNAL_START, '\n  ✅  Ready to record?  Press ENTER to start  › ');
 
   const url          = page.url();
   const storageState = await ctx.storageState();
@@ -103,7 +139,7 @@ async function setup(): Promise<{ storageState: Awaited<ReturnType<BrowserContex
   await ctx.close();
   await browser.close();
 
-  console.log(`\n  Saved session. Recording will start at:\n  ${url}\n`);
+  console.log(`\n  Session saved. Recording will start at: ${url}\n`);
   return { storageState, url };
 }
 
@@ -116,7 +152,11 @@ async function record(
   console.log('┌─────────────────────────────────────────────────────────┐');
   console.log('│  Phase 2 — Recording                                    │');
   console.log('│  Perform your flow. Every click is captured.            │');
-  console.log('│  Return here and press ENTER when done.                 │');
+  if (USE_SIGNALS) {
+  console.log(`│  Signal done:  touch ${SIGNAL_STOP.padEnd(33)}│`);
+  } else {
+  console.log('│  Press ENTER here when done.                            │');
+  }
   console.log('└─────────────────────────────────────────────────────────┘\n');
 
   fs.mkdirSync(RECORDING_DIR, { recursive: true });
@@ -196,16 +236,12 @@ async function record(
   const t0 = Date.now();
   console.log('  🔴  Recording!  Do your thing...\n');
 
-  // Race: Enter pressed OR user closes the browser window
-  const { promise: enterPromise, cancel: cancelReadline } = prompt(
-    '  ⏹   Done?  Press ENTER to stop  › ',
-  );
-  // Page 'close' fires when the tab or window is closed by the user
+  // Race: stop signal/Enter pressed OR user closes the browser window
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const browserClosedPromise = new Promise<void>(r => (page as any).once('close', r));
+  const stopPromise = advance(SIGNAL_STOP, '  ⏹   Done?  Press ENTER to stop  › ');
 
-  await Promise.race([enterPromise, browserClosedPromise]);
-  cancelReadline();
+  await Promise.race([stopPromise, browserClosedPromise]);
 
   const durationMs = Date.now() - t0;
 
