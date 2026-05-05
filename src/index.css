@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tut-blue: #3B82F6;
+  --color-tut-blue-light: #60A5FA;
+}
+
+@layer components {
+  .tut-caption {
+    @apply absolute left-0 right-0 flex items-center px-12 font-sans;
+    bottom: 0;
+    height: 96px;
+    background: rgba(0, 0, 0, 0.78);
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    letter-spacing: 0.005em;
+  }
+
+  .tut-highlight {
+    @apply absolute rounded-lg pointer-events-none;
+    border: 3px solid var(--color-tut-blue);
+    background: rgba(59, 130, 246, 0.12);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.18), 0 0 24px rgba(59, 130, 246, 0.35);
+  }
+
+  .tut-ripple {
+    @apply absolute rounded-full pointer-events-none;
+    border: 3px solid var(--color-tut-blue-light);
+  }
+
+  .tut-cursor {
+    @apply absolute pointer-events-none;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  }
+}

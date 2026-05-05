@@ -1,0 +1,105 @@
+{
+  "flowSlug": "create-linear-issue",
+  "capturedAt": "2026-05-05T19:45:00.000Z",
+  "recordingFile": "public/recordings/create-linear-issue/recording.webm",
+  "videoDurationMs": 31766,
+  "viewport": { "width": 1920, "height": 1080 },
+  "steps": [
+    {
+      "step": 1,
+      "label": "Board overview",
+      "caption": "Your team's Linear board shows all issues organized by workflow status — a live snapshot of what everyone is working on.",
+      "startMs": 0,
+      "interaction": "none",
+      "element": { "selector": "user-described", "x": 0, "y": 0, "width": 384, "height": 1080 }
+    },
+    {
+      "step": 2,
+      "label": "Open quick issue creator",
+      "caption": "Press C from anywhere in Linear to open the quick issue creator instantly, without leaving your current view.",
+      "startMs": 2000,
+      "interaction": "click",
+      "element": { "selector": "user-described", "x": 545, "y": 219, "width": 741, "height": 454 }
+    },
+    {
+      "step": 3,
+      "label": "Enter issue title",
+      "caption": "Type a clear, searchable title. Linear uses it across notifications, filters, and search — precision here saves time later.",
+      "startMs": 5000,
+      "interaction": "fill",
+      "element": { "selector": "user-described", "x": 545, "y": 219, "width": 741, "height": 90 }
+    },
+    {
+      "step": 4,
+      "label": "Add a description",
+      "caption": "The description field accepts rich text, images, and mentions — add context that makes the issue self-explanatory.",
+      "startMs": 9000,
+      "interaction": "click",
+      "element": { "selector": "user-described", "x": 545, "y": 310, "width": 741, "height": 120 }
+    },
+    {
+      "step": 5,
+      "label": "Set status",
+      "caption": "The status picker maps to your team's workflow. Issues start as Todo and move forward as work progresses.",
+      "startMs": 11000,
+      "interaction": "click",
+      "element": { "selector": "user-described", "x": 545, "y": 450, "width": 380, "height": 260 }
+    },
+    {
+      "step": 6,
+      "label": "Set priority",
+      "caption": "Priority tells your team what to tackle first. You can filter and sort by priority across any Linear view.",
+      "startMs": 13000,
+      "interaction": "click",
+      "element": { "selector": "user-described", "x": 545, "y": 450, "width": 280, "height": 200 }
+    },
+    {
+      "step": 7,
+      "label": "High priority selected",
+      "caption": "High priority flags this issue for prompt attention — it surfaces in priority-filtered views and daily digests.",
+      "startMs": 15000,
+      "interaction": "none",
+      "element": { "selector": "user-described", "x": 545, "y": 610, "width": 741, "height": 55 }
+    },
+    {
+      "step": 8,
+      "label": "Assign to a teammate",
+      "caption": "Assigning the issue sends a notification and makes it appear in the assignee's My Issues view immediately.",
+      "startMs": 16000,
+      "interaction": "click",
+      "element": { "selector": "user-described", "x": 545, "y": 450, "width": 380, "height": 280 }
+    },
+    {
+      "step": 9,
+      "label": "Link to a cycle",
+      "caption": "Linking the issue to a cycle adds it to your sprint. Cycles give Linear its time-boxed, goal-driven structure.",
+      "startMs": 19000,
+      "interaction": "click",
+      "element": { "selector": "user-described", "x": 545, "y": 380, "width": 380, "height": 320 }
+    },
+    {
+      "step": 10,
+      "label": "Create the issue",
+      "caption": "Click Create Issue to save it instantly. Linear assigns a unique ID for tracking in commits, PRs, and Slack.",
+      "startMs": 21000,
+      "interaction": "click",
+      "element": { "selector": "user-described", "x": 1050, "y": 618, "width": 230, "height": 45 }
+    },
+    {
+      "step": 11,
+      "label": "Issue appears on the board",
+      "caption": "The new issue appears in the Todo column right away — no refresh needed. The toast confirms the ID for quick reference.",
+      "startMs": 23000,
+      "interaction": "none",
+      "element": null
+    },
+    {
+      "step": 12,
+      "label": "View issue details",
+      "caption": "Click any issue to open the full detail view, where you can add comments, sub-issues, estimates, and attachments.",
+      "startMs": 26000,
+      "interaction": "none",
+      "element": { "selector": "user-described", "x": 1536, "y": 0, "width": 384, "height": 1080 }
+    }
+  ]
+}

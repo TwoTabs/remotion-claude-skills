@@ -1,1 +1,20 @@
 node_modules/
+
+# Rendered output
+out/
+output/
+
+# Source screen recordings (large binary files)
+public/recordings/*.mov
+public/recordings/*.mp4
+
+# Playwright-generated .webm recordings
+public/recordings/*/recording.webm
+public/recordings/*/*.webm
+
+# Raw TTS intermediate .aiff files (keep converted .mp3s in public/audio/)
+/audio/
+
+.DS_Store
+*.log
+.remotion/

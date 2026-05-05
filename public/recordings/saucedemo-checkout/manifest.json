@@ -1,0 +1,278 @@
+{
+  "flowSlug": "saucedemo-checkout",
+  "capturedAt": "2026-05-03T23:00:59.580Z",
+  "recordingFile": "public/recordings/saucedemo-checkout/recording.webm",
+  "videoDurationMs": 76919,
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "Login screen",
+      "caption": "Sauce Demo — a sample e-commerce site. Let’s log in and place an order.",
+      "startMs": 1,
+      "interaction": "none",
+      "element": {
+        "selector": "[data-test=\"login-container\"]",
+        "x": 0,
+        "y": 108,
+        "width": 1920,
+        "height": 542.53125
+      }
+    },
+    {
+      "step": 2,
+      "label": "Username",
+      "caption": "Enter the standard user — the demo lists every test account on the page.",
+      "startMs": 3570,
+      "interaction": "fill",
+      "element": {
+        "selector": "[data-test=\"username\"]",
+        "x": 814,
+        "y": 154,
+        "width": 292,
+        "height": 39
+      },
+      "typedValue": "standard_user"
+    },
+    {
+      "step": 3,
+      "label": "Password",
+      "caption": "And the shared password.",
+      "startMs": 5797,
+      "interaction": "fill",
+      "element": {
+        "selector": "[data-test=\"password\"]",
+        "x": 814,
+        "y": 208,
+        "width": 292,
+        "height": 39
+      },
+      "typedValue": "secret_sauce"
+    },
+    {
+      "step": 4,
+      "label": "Submit login",
+      "caption": "Click Login to enter the store.",
+      "startMs": 7857,
+      "interaction": "click",
+      "element": {
+        "selector": "[data-test=\"login-button\"]",
+        "x": 814,
+        "y": 302,
+        "width": 292,
+        "height": 49
+      }
+    },
+    {
+      "step": 5,
+      "label": "Inventory page",
+      "caption": "Six products. They’re sorted A-Z by default.",
+      "startMs": 9778,
+      "interaction": "none",
+      "element": {
+        "selector": "[data-test=\"inventory-list\"]",
+        "x": 415,
+        "y": 154,
+        "width": 1090,
+        "height": 786
+      }
+    },
+    {
+      "step": 6,
+      "label": "Sort price low→high",
+      "caption": "Re-sort by price, lowest first.",
+      "startMs": 13006,
+      "interaction": "select",
+      "element": {
+        "selector": "[data-test=\"product-sort-container\"]",
+        "x": 1676,
+        "y": 70,
+        "width": 223,
+        "height": 30
+      },
+      "typedValue": "lohi"
+    },
+    {
+      "step": 7,
+      "label": "Sorted result",
+      "caption": "The Onesie at $7.99 is now the cheapest item.",
+      "startMs": 14851,
+      "interaction": "none",
+      "element": {
+        "selector": "[data-test=\"inventory-item\"]",
+        "x": 430,
+        "y": 154,
+        "width": 505,
+        "height": 240
+      }
+    },
+    {
+      "step": 8,
+      "label": "Add Onesie",
+      "caption": "Add the cheapest item to the cart.",
+      "startMs": 17888,
+      "interaction": "click",
+      "element": {
+        "selector": "[data-test=\"add-to-cart-sauce-labs-onesie\"]",
+        "x": 740,
+        "y": 339,
+        "width": 160,
+        "height": 34
+      }
+    },
+    {
+      "step": 9,
+      "label": "Add Bike Light",
+      "caption": "Add a second item — the cart badge updates to 2.",
+      "startMs": 19959,
+      "interaction": "click",
+      "element": {
+        "selector": "[data-test=\"add-to-cart-sauce-labs-bike-light\"]",
+        "x": 1295,
+        "y": 339,
+        "width": 160,
+        "height": 34
+      }
+    },
+    {
+      "step": 10,
+      "label": "Open cart",
+      "caption": "Click the cart icon to review the order.",
+      "startMs": 22424,
+      "interaction": "click",
+      "element": {
+        "selector": "[data-test=\"shopping-cart-link\"]",
+        "x": 1860,
+        "y": 10,
+        "width": 40,
+        "height": 40
+      }
+    },
+    {
+      "step": 11,
+      "label": "Cart contents",
+      "caption": "Both items are here. Time to check out.",
+      "startMs": 24496,
+      "interaction": "none",
+      "element": {
+        "selector": "[data-test=\"cart-list\"]",
+        "x": 320,
+        "y": 114,
+        "width": 1280,
+        "height": 432
+      }
+    },
+    {
+      "step": 12,
+      "label": "Checkout",
+      "caption": "Click Checkout to enter shipping details.",
+      "startMs": 27525,
+      "interaction": "click",
+      "element": {
+        "selector": "[data-test=\"checkout\"]",
+        "x": 1380,
+        "y": 606,
+        "width": 220,
+        "height": 34
+      }
+    },
+    {
+      "step": 13,
+      "label": "First name",
+      "caption": "Fill in shipping details — first name…",
+      "startMs": 29099,
+      "interaction": "fill",
+      "element": {
+        "selector": "[data-test=\"firstName\"]",
+        "x": 770,
+        "y": 255,
+        "width": 380,
+        "height": 39
+      },
+      "typedValue": "Wyn"
+    },
+    {
+      "step": 14,
+      "label": "Last name",
+      "caption": "…last name…",
+      "startMs": 30548,
+      "interaction": "fill",
+      "element": {
+        "selector": "[data-test=\"lastName\"]",
+        "x": 770,
+        "y": 309,
+        "width": 380,
+        "height": 39
+      },
+      "typedValue": "Tester"
+    },
+    {
+      "step": 15,
+      "label": "Postal code",
+      "caption": "…and zip.",
+      "startMs": 31893,
+      "interaction": "fill",
+      "element": {
+        "selector": "[data-test=\"postalCode\"]",
+        "x": 770,
+        "y": 363,
+        "width": 380,
+        "height": 39
+      },
+      "typedValue": "94103"
+    },
+    {
+      "step": 16,
+      "label": "Continue",
+      "caption": "Continue to the order overview.",
+      "startMs": 33725,
+      "interaction": "click",
+      "element": {
+        "selector": "[data-test=\"continue\"]",
+        "x": 1365,
+        "y": 599,
+        "width": 220,
+        "height": 41
+      }
+    },
+    {
+      "step": 17,
+      "label": "Order summary",
+      "caption": "Subtotal, tax and total appear before you confirm.",
+      "startMs": 35996,
+      "interaction": "none",
+      "element": null
+    },
+    {
+      "step": 18,
+      "label": "Finish order",
+      "caption": "Click Finish to place the order.",
+      "startMs": 71504,
+      "interaction": "click",
+      "element": {
+        "selector": "[data-test=\"finish\"]",
+        "x": 1380,
+        "y": 876,
+        "width": 220,
+        "height": 34
+      }
+    },
+    {
+      "step": 19,
+      "label": "Order complete",
+      "caption": "Thank you for your order — flow done.",
+      "startMs": 73385,
+      "interaction": "none",
+      "element": {
+        "selector": "[data-test=\"complete-header\"]",
+        "x": 780,
+        "y": 295.90625,
+        "width": 360,
+        "height": 32
+      }
+    }
+  ]
+}

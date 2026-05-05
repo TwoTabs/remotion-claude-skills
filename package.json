@@ -1,0 +1,28 @@
+{
+  "name": "playwright-test-sites",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/remotion-root.tsx",
+    "render": "remotion render src/remotion-root.tsx",
+    "still": "remotion still src/remotion-root.tsx",
+    "tsc": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.401",
+    "@remotion/tailwind-v4": "4.0.401",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.401",
+    "tailwindcss": "4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.0",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "playwright": "1.59.1",
+    "tsx": "4.21.0",
+    "typescript": "5.7.3"
+  }
+}

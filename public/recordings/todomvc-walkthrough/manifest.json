@@ -1,0 +1,276 @@
+{
+  "flowSlug": "todomvc-walkthrough",
+  "capturedAt": "2026-05-03T17:42:27.443Z",
+  "recordingFile": "public/recordings/todomvc-walkthrough/recording.webm",
+  "videoDurationMs": 44444,
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "Overview",
+      "caption": "TodoMVC — a clean to-do list. Let’s add three items, manage them, and clean up.",
+      "startMs": 0,
+      "interaction": "none",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      }
+    },
+    {
+      "step": 2,
+      "label": "Add first todo",
+      "caption": "Type the first item into the input.",
+      "startMs": 3553,
+      "interaction": "fill",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      },
+      "typedValue": "Buy groceries"
+    },
+    {
+      "step": 3,
+      "label": "Submit first",
+      "caption": "Press Enter to add it to the list.",
+      "startMs": 4390,
+      "interaction": "press",
+      "element": null,
+      "typedValue": "Enter"
+    },
+    {
+      "step": 4,
+      "label": "Add second todo",
+      "caption": "Add another one — the input stays focused.",
+      "startMs": 6627,
+      "interaction": "fill",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      },
+      "typedValue": "Walk the dog"
+    },
+    {
+      "step": 5,
+      "label": "Submit second",
+      "caption": "And submit.",
+      "startMs": 7351,
+      "interaction": "press",
+      "element": null,
+      "typedValue": "Enter"
+    },
+    {
+      "step": 6,
+      "label": "Add third todo",
+      "caption": "One more for the day.",
+      "startMs": 9154,
+      "interaction": "fill",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      },
+      "typedValue": "Finish weekly report"
+    },
+    {
+      "step": 7,
+      "label": "Submit third",
+      "caption": "Three todos added.",
+      "startMs": 9904,
+      "interaction": "press",
+      "element": null,
+      "typedValue": "Enter"
+    },
+    {
+      "step": 8,
+      "label": "Three todos visible",
+      "caption": "Now let’s mark the middle one as complete.",
+      "startMs": 12408,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-list",
+        "x": 685,
+        "y": 241.1875,
+        "width": 550,
+        "height": 178.390625
+      }
+    },
+    {
+      "step": 9,
+      "label": "Complete middle",
+      "caption": "Click the checkbox to mark \"Walk the dog\" done.",
+      "startMs": 15625,
+      "interaction": "click",
+      "element": {
+        "selector": ".todo-list li .toggle[nth=1]",
+        "x": 685,
+        "y": 310.375,
+        "width": 40,
+        "height": 40
+      }
+    },
+    {
+      "step": 10,
+      "label": "Completed item",
+      "caption": "It’s struck through to show it’s done.",
+      "startMs": 17905,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-list li.completed",
+        "x": 685,
+        "y": 300.984375,
+        "width": 550,
+        "height": 59.796875
+      }
+    },
+    {
+      "step": 11,
+      "label": "Filter active",
+      "caption": "Filter to see only what’s still pending.",
+      "startMs": 20943,
+      "interaction": "click",
+      "element": {
+        "selector": ".filters >> text=Active",
+        "x": 908.78125,
+        "y": 427.578125,
+        "width": 51.03125,
+        "height": 25
+      }
+    },
+    {
+      "step": 12,
+      "label": "Active filter applied",
+      "caption": "Two active items remain.",
+      "startMs": 23210,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-list",
+        "x": 685,
+        "y": 241.1875,
+        "width": 550,
+        "height": 118.59375
+      }
+    },
+    {
+      "step": 13,
+      "label": "Filter completed",
+      "caption": "Switch to the completed view.",
+      "startMs": 26244,
+      "interaction": "click",
+      "element": {
+        "selector": ".filters >> text=Completed",
+        "x": 969.71875,
+        "y": 367.78125,
+        "width": 80.40625,
+        "height": 25
+      }
+    },
+    {
+      "step": 14,
+      "label": "Completed filter applied",
+      "caption": "Just the one we marked done.",
+      "startMs": 28513,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-list",
+        "x": 685,
+        "y": 241.1875,
+        "width": 550,
+        "height": 58.796875
+      }
+    },
+    {
+      "step": 15,
+      "label": "Show all",
+      "caption": "Back to everything.",
+      "startMs": 31545,
+      "interaction": "click",
+      "element": {
+        "selector": ".filters >> text=All",
+        "x": 869.859375,
+        "y": 307.984375,
+        "width": 29.015625,
+        "height": 25
+      }
+    },
+    {
+      "step": 16,
+      "label": "Edit todo",
+      "caption": "Double-click any item to edit it inline.",
+      "startMs": 33611,
+      "interaction": "dblclick",
+      "element": {
+        "selector": ".todo-list li label",
+        "x": 685,
+        "y": 241.1875,
+        "width": 550,
+        "height": 58.796875
+      }
+    },
+    {
+      "step": 17,
+      "label": "Rename it",
+      "caption": "Replace the text with a new name.",
+      "startMs": 35183,
+      "interaction": "fill",
+      "element": {
+        "selector": ".todo-list li.editing .edit",
+        "x": 728,
+        "y": 241.1875,
+        "width": 506,
+        "height": 59.59375
+      },
+      "typedValue": "Buy groceries and milk"
+    },
+    {
+      "step": 18,
+      "label": "Save edit",
+      "caption": "Press Enter to save the change.",
+      "startMs": 36132,
+      "interaction": "press",
+      "element": null,
+      "typedValue": "Enter"
+    },
+    {
+      "step": 19,
+      "label": "Clear completed",
+      "caption": "Click \"Clear completed\" to remove finished items.",
+      "startMs": 38640,
+      "interaction": "click",
+      "element": {
+        "selector": ".clear-completed",
+        "x": 1123.921875,
+        "y": 430.578125,
+        "width": 96.078125,
+        "height": 20
+      }
+    },
+    {
+      "step": 20,
+      "label": "Done",
+      "caption": "Two items left — clean and tidy.",
+      "startMs": 40909,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-count",
+        "x": 700,
+        "y": 370.78125,
+        "width": 63.15625,
+        "height": 19.59375
+      }
+    }
+  ]
+}

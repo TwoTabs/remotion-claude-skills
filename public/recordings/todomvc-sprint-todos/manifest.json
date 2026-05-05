@@ -1,0 +1,327 @@
+{
+  "flowSlug": "todomvc-sprint-todos",
+  "capturedAt": "2026-05-04T15:09:24.417Z",
+  "recordingFile": "public/recordings/todomvc-sprint-todos/recording.webm",
+  "videoDurationMs": 48732,
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "App overview",
+      "caption": "TodoMVC — a clean to-do app. Let's add three sprint items.",
+      "startMs": 0,
+      "interaction": "none",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      }
+    },
+    {
+      "step": 2,
+      "label": "Type first todo",
+      "caption": "Type the first item into the input field.",
+      "startMs": 3549,
+      "interaction": "fill",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      },
+      "typedValue": "Open Gather"
+    },
+    {
+      "step": 3,
+      "label": "Submit first",
+      "caption": "Press Enter to add it to the list.",
+      "startMs": 4188,
+      "interaction": "press",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      },
+      "typedValue": "Enter"
+    },
+    {
+      "step": 4,
+      "label": "Type second todo",
+      "caption": "Add the second item — the input stays focused.",
+      "startMs": 6056,
+      "interaction": "fill",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      },
+      "typedValue": "Attend Sprint Meeting"
+    },
+    {
+      "step": 5,
+      "label": "Submit second",
+      "caption": "Submit it the same way.",
+      "startMs": 6720,
+      "interaction": "press",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      },
+      "typedValue": "Enter"
+    },
+    {
+      "step": 6,
+      "label": "Type third todo",
+      "caption": "One more — a well-earned break item.",
+      "startMs": 8551,
+      "interaction": "fill",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      },
+      "typedValue": "Play Tetris"
+    },
+    {
+      "step": 7,
+      "label": "Submit third",
+      "caption": "Three todos added.",
+      "startMs": 9195,
+      "interaction": "press",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      },
+      "typedValue": "Enter"
+    },
+    {
+      "step": 8,
+      "label": "Three todos added",
+      "caption": "All three items are in the list.",
+      "startMs": 11216,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-list",
+        "x": 685,
+        "y": 241.1875,
+        "width": 550,
+        "height": 178.390625
+      }
+    },
+    {
+      "step": 9,
+      "label": "Complete first",
+      "caption": "Check off 'Open Gather' — first meeting done.",
+      "startMs": 14428,
+      "interaction": "click",
+      "element": {
+        "selector": ".todo-list li .toggle",
+        "x": 685,
+        "y": 250.578125,
+        "width": 40,
+        "height": 40
+      }
+    },
+    {
+      "step": 10,
+      "label": "Complete second",
+      "caption": "Check off 'Attend Sprint Meeting' too.",
+      "startMs": 16550,
+      "interaction": "click",
+      "element": {
+        "selector": ".todo-list li .toggle[nth=1]",
+        "x": 685,
+        "y": 310.375,
+        "width": 40,
+        "height": 40
+      }
+    },
+    {
+      "step": 11,
+      "label": "Two completed",
+      "caption": "Two items done, one still active.",
+      "startMs": 18616,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-list",
+        "x": 685,
+        "y": 241.1875,
+        "width": 550,
+        "height": 178.390625
+      }
+    },
+    {
+      "step": 12,
+      "label": "Filter active",
+      "caption": "Filter to 'Active' — only unfinished items show.",
+      "startMs": 21849,
+      "interaction": "click",
+      "element": {
+        "selector": ".filters >> text=Active",
+        "x": 908.78125,
+        "y": 427.578125,
+        "width": 51.03125,
+        "height": 25
+      }
+    },
+    {
+      "step": 13,
+      "label": "Active filter",
+      "caption": "Just 'Play Tetris' remains — the only pending item.",
+      "startMs": 23917,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-list",
+        "x": 685,
+        "y": 241.1875,
+        "width": 550,
+        "height": 58.796875
+      }
+    },
+    {
+      "step": 14,
+      "label": "Filter completed",
+      "caption": "Switch to 'Completed' to see what's done.",
+      "startMs": 27147,
+      "interaction": "click",
+      "element": {
+        "selector": ".filters >> text=Completed",
+        "x": 969.71875,
+        "y": 307.984375,
+        "width": 80.40625,
+        "height": 25
+      }
+    },
+    {
+      "step": 15,
+      "label": "Completed filter",
+      "caption": "The two completed meetings appear here.",
+      "startMs": 29217,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-list",
+        "x": 685,
+        "y": 241.1875,
+        "width": 550,
+        "height": 118.59375
+      }
+    },
+    {
+      "step": 16,
+      "label": "Show all",
+      "caption": "Back to 'All' — all three items visible again.",
+      "startMs": 32448,
+      "interaction": "click",
+      "element": {
+        "selector": ".filters >> text=All",
+        "x": 869.859375,
+        "y": 367.78125,
+        "width": 29.015625,
+        "height": 25
+      }
+    },
+    {
+      "step": 17,
+      "label": "Edit todo",
+      "caption": "Double-click 'Play Tetris' to edit it inline.",
+      "startMs": 34515,
+      "interaction": "dblclick",
+      "element": {
+        "selector": ".todo-list li label[nth=2]",
+        "x": 685,
+        "y": 360.78125,
+        "width": 550,
+        "height": 58.796875
+      }
+    },
+    {
+      "step": 18,
+      "label": "Rename todo",
+      "caption": "Clear the field and type the updated name.",
+      "startMs": 36090,
+      "interaction": "fill",
+      "element": {
+        "selector": ".todo-list li.editing .edit",
+        "x": 728,
+        "y": 360.78125,
+        "width": 506,
+        "height": 59.59375
+      },
+      "typedValue": "Play Tetris at lunch"
+    },
+    {
+      "step": 19,
+      "label": "Blur to save",
+      "caption": "Click outside the field — blurring saves the edit without pressing Enter.",
+      "startMs": 37035,
+      "interaction": "click",
+      "element": {
+        "selector": ".new-todo",
+        "x": 685,
+        "y": 174.59375,
+        "width": 550,
+        "height": 65.59375
+      }
+    },
+    {
+      "step": 20,
+      "label": "Edit saved",
+      "caption": "Renamed to 'Play Tetris at lunch' — blur saves automatically.",
+      "startMs": 39599,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-list li:last-child label",
+        "x": 685,
+        "y": 360.78125,
+        "width": 550,
+        "height": 58.796875
+      }
+    },
+    {
+      "step": 21,
+      "label": "Clear completed",
+      "caption": "Click 'Clear completed' to remove the two finished items.",
+      "startMs": 42830,
+      "interaction": "click",
+      "element": {
+        "selector": ".clear-completed",
+        "x": 1123.921875,
+        "y": 430.578125,
+        "width": 96.078125,
+        "height": 20
+      }
+    },
+    {
+      "step": 22,
+      "label": "Count verified",
+      "caption": "The counter confirms it: 1 item left.",
+      "startMs": 44905,
+      "interaction": "none",
+      "element": {
+        "selector": ".todo-count",
+        "x": 700,
+        "y": 310.984375,
+        "width": 56.421875,
+        "height": 19.59375
+      }
+    }
+  ]
+}

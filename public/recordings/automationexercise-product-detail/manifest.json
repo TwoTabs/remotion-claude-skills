@@ -1,0 +1,194 @@
+{
+  "flowSlug": "automationexercise-product-detail",
+  "capturedAt": "2026-05-03T23:26:28.695Z",
+  "recordingFile": "public/recordings/automationexercise-product-detail/recording.webm",
+  "videoDurationMs": 39836,
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "Home page",
+      "caption": "AutomationExercise — let’s open the catalog and inspect a product.",
+      "startMs": 0,
+      "interaction": "none",
+      "element": {
+        "selector": "#slider-carousel",
+        "x": 390,
+        "y": 133,
+        "width": 1140,
+        "height": 441
+      }
+    },
+    {
+      "step": 2,
+      "label": "Products nav link",
+      "caption": "The top nav links to every section of the site.",
+      "startMs": 3539,
+      "interaction": "none",
+      "element": {
+        "selector": "header a[href=\"/products\"]",
+        "x": 887.234375,
+        "y": 30,
+        "width": 78.65625,
+        "height": 21
+      }
+    },
+    {
+      "step": 3,
+      "label": "Open Products",
+      "caption": "Click Products to see the full catalog.",
+      "startMs": 6370,
+      "interaction": "click",
+      "element": {
+        "selector": "header a[href=\"/products\"]",
+        "x": 887.234375,
+        "y": 30,
+        "width": 78.65625,
+        "height": 21
+      }
+    },
+    {
+      "step": 4,
+      "label": "All Products page",
+      "caption": "You’re on the All Products page — every item in the catalog.",
+      "startMs": 9289,
+      "interaction": "none",
+      "element": {
+        "selector": ".features_items .title",
+        "x": 697.5,
+        "y": 513,
+        "width": 832.5,
+        "height": 19.796875
+      }
+    },
+    {
+      "step": 5,
+      "label": "Products list",
+      "caption": "Each card shows a thumbnail, name, and price.",
+      "startMs": 12522,
+      "interaction": "none",
+      "element": {
+        "selector": ".features_items .product-image-wrapper",
+        "x": 697.5,
+        "y": 562.796875,
+        "width": 257.484375,
+        "height": 424.3125
+      }
+    },
+    {
+      "step": 6,
+      "label": "View first product",
+      "caption": "Click \"View Product\" on the first item.",
+      "startMs": 15775,
+      "interaction": "click",
+      "element": {
+        "selector": "a:has-text(\"View Product\")",
+        "x": 702.5,
+        "y": 943.546875,
+        "width": 247.484375,
+        "height": 38.5625
+      }
+    },
+    {
+      "step": 7,
+      "label": "Product detail page",
+      "caption": "You’re now on the product detail page.",
+      "startMs": 18897,
+      "interaction": "none",
+      "element": {
+        "selector": ".product-information",
+        "x": 1056.875,
+        "y": 143,
+        "width": 473.125,
+        "height": 350.84375
+      }
+    },
+    {
+      "step": 8,
+      "label": "Product name",
+      "caption": "Name appears as the page heading.",
+      "startMs": 22136,
+      "interaction": "none",
+      "element": {
+        "selector": ".product-information h2",
+        "x": 1117.875,
+        "y": 204,
+        "width": 411.125,
+        "height": 22
+      }
+    },
+    {
+      "step": 9,
+      "label": "Category",
+      "caption": "Category — e.g. Women › Tops.",
+      "startMs": 24971,
+      "interaction": "none",
+      "element": {
+        "selector": ".product-information p:has-text(\"Category\")",
+        "x": 1117.875,
+        "y": 236,
+        "width": 411.125,
+        "height": 20
+      }
+    },
+    {
+      "step": 10,
+      "label": "Price",
+      "caption": "Price in rupees, just below the name.",
+      "startMs": 27805,
+      "interaction": "none",
+      "element": {
+        "selector": ".product-information span span",
+        "x": 1117.875,
+        "y": 299,
+        "width": 105.078125,
+        "height": 42.84375
+      }
+    },
+    {
+      "step": 11,
+      "label": "Availability",
+      "caption": "Availability — In Stock when ready to ship.",
+      "startMs": 30638,
+      "interaction": "none",
+      "element": {
+        "selector": ".product-information p:has-text(\"Availability\")",
+        "x": 1117.875,
+        "y": 357.84375,
+        "width": 411.125,
+        "height": 20
+      }
+    },
+    {
+      "step": 12,
+      "label": "Condition",
+      "caption": "Condition tells you New vs. Used.",
+      "startMs": 33471,
+      "interaction": "none",
+      "element": {
+        "selector": ".product-information p:has-text(\"Condition\")",
+        "x": 1117.875,
+        "y": 382.84375,
+        "width": 411.125,
+        "height": 20
+      }
+    },
+    {
+      "step": 13,
+      "label": "Brand",
+      "caption": "And finally, the brand.",
+      "startMs": 36306,
+      "interaction": "none",
+      "element": {
+        "selector": ".product-information p:has-text(\"Brand\")",
+        "x": 1117.875,
+        "y": 407.84375,
+        "width": 411.125,
+        "height": 20
+      }
+    }
+  ]
+}
