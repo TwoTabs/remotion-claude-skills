@@ -1,0 +1,534 @@
+[
+  {
+    "tag": "button",
+    "role": null,
+    "text": "Learn More",
+    "aria": null,
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 1134,
+      "y": 12,
+      "w": 92,
+      "h": 32
+    }
+  },
+  {
+    "tag": "nav",
+    "role": null,
+    "text": "Skip to main content Accessibility help Wyn's Testing Ground",
+    "aria": null,
+    "ph": null,
+    "testid": "PageNavigationLeftNav",
+    "rect": {
+      "x": 0,
+      "y": 48,
+      "w": 240,
+      "h": 852
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "Wyn's Testing Grounds",
+    "aria": null,
+    "ph": null,
+    "testid": "TopBarPageBundleMenu",
+    "rect": {
+      "x": 48,
+      "y": 70,
+      "w": 176,
+      "h": 48
+    }
+  },
+  {
+    "tag": "a",
+    "role": null,
+    "text": "Untitled",
+    "aria": null,
+    "ph": null,
+    "testid": "PageNavigationLeftNavPageMenuItem",
+    "rect": {
+      "x": 16,
+      "y": 138,
+      "w": 208,
+      "h": 28
+    }
+  },
+  {
+    "tag": "a",
+    "role": null,
+    "text": "IT Support Requests Dashboard",
+    "aria": null,
+    "ph": null,
+    "testid": "PageNavigationLeftNavPageMenuItem",
+    "rect": {
+      "x": 16,
+      "y": 168,
+      "w": 208,
+      "h": 28
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "W",
+    "aria": "Account",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 18,
+      "y": 854,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "div",
+    "role": "img",
+    "text": "W",
+    "aria": "W",
+    "ph": null,
+    "testid": "userIcon",
+    "rect": {
+      "x": 18,
+      "y": 854,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "button",
+    "role": null,
+    "text": "Share",
+    "aria": "Open share dialog",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 101,
+      "y": 852,
+      "w": 59,
+      "h": 32
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "0",
+    "aria": "No unseen notifications",
+    "ph": null,
+    "testid": "notification-menu-button",
+    "rect": {
+      "x": 164,
+      "y": 852,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "0",
+    "aria": null,
+    "ph": null,
+    "testid": "notification-count",
+    "rect": {
+      "x": 183,
+      "y": 853,
+      "w": 13,
+      "h": 9
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "",
+    "aria": "Collapse navigation",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 196,
+      "y": 852,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "Interface - IT Support Requests Dashboard IT Support Request",
+    "aria": null,
+    "ph": null,
+    "testid": "page-element:verticalStack",
+    "rect": {
+      "x": 240,
+      "y": 48,
+      "w": 1360,
+      "h": 852
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "",
+    "aria": "More actions",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 1544,
+      "y": 64,
+      "w": 32,
+      "h": 32
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "IT Support Requests Overview Monitor, analyze, and manage al",
+    "aria": null,
+    "ph": null,
+    "testid": "page-element:queryContainer",
+    "rect": {
+      "x": 264,
+      "y": 137,
+      "w": 1312,
+      "h": 1933
+    }
+  },
+  {
+    "tag": "span",
+    "role": null,
+    "text": "Status Status Urgency Level Urgency Level Assigned Technicia",
+    "aria": null,
+    "ph": null,
+    "testid": "query-container-easy-filters",
+    "rect": {
+      "x": 276,
+      "y": 231,
+      "w": 1252,
+      "h": 44
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "Status Status Urgency Level Urgency Level Assigned Technicia",
+    "aria": null,
+    "ph": null,
+    "testid": "query-container-preset-filters",
+    "rect": {
+      "x": 276,
+      "y": 231,
+      "w": 1252,
+      "h": 28
+    }
+  },
+  {
+    "tag": "button",
+    "role": "combobox",
+    "text": "Status Status",
+    "aria": "Status",
+    "ph": null,
+    "testid": "preset-filter-button:Status",
+    "rect": {
+      "x": 276,
+      "y": 231,
+      "w": 79,
+      "h": 28
+    }
+  },
+  {
+    "tag": "button",
+    "role": "combobox",
+    "text": "Urgency Level Urgency Level",
+    "aria": "Urgency Level",
+    "ph": null,
+    "testid": "preset-filter-button:Urgency Level",
+    "rect": {
+      "x": 367,
+      "y": 231,
+      "w": 126,
+      "h": 28
+    }
+  },
+  {
+    "tag": "button",
+    "role": "combobox",
+    "text": "Assigned Technician",
+    "aria": null,
+    "ph": null,
+    "testid": "preset-filter-button:Assigned Technician",
+    "rect": {
+      "x": 505,
+      "y": 231,
+      "w": 164,
+      "h": 28
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "Total IT Support Requests 10 Open Critical Requests 2 IT Sup",
+    "aria": null,
+    "ph": null,
+    "testid": "page-element:dashboard",
+    "rect": {
+      "x": 276,
+      "y": 275,
+      "w": 1288,
+      "h": 1783
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "Total IT Support Requests 10 Open Critical Requests 2",
+    "aria": null,
+    "ph": null,
+    "testid": "gridRowSection",
+    "rect": {
+      "x": 276,
+      "y": 275,
+      "w": 1288,
+      "h": 95
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "Total IT Support Requests 10",
+    "aria": null,
+    "ph": null,
+    "testid": "page-element:bigNumber",
+    "rect": {
+      "x": 276,
+      "y": 275,
+      "w": 638,
+      "h": 95
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "",
+    "aria": "Expand",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 870,
+      "y": 291,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "p",
+    "role": null,
+    "text": "10",
+    "aria": null,
+    "ph": null,
+    "testid": "number-count",
+    "rect": {
+      "x": 300,
+      "y": 308,
+      "w": 44,
+      "h": 47
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "Open Critical Requests 2",
+    "aria": null,
+    "ph": null,
+    "testid": "page-element:bigNumber",
+    "rect": {
+      "x": 926,
+      "y": 275,
+      "w": 638,
+      "h": 95
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "",
+    "aria": "Expand",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 1520,
+      "y": 291,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "p",
+    "role": null,
+    "text": "2",
+    "aria": null,
+    "ph": null,
+    "testid": "number-count",
+    "rect": {
+      "x": 950,
+      "y": 308,
+      "w": 24,
+      "h": 47
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "IT Support Requests by Status Number of support requests gro",
+    "aria": null,
+    "ph": null,
+    "testid": "gridRowSection",
+    "rect": {
+      "x": 276,
+      "y": 382,
+      "w": 1288,
+      "h": 652
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "IT Support Requests by Status Number of support requests gro",
+    "aria": null,
+    "ph": null,
+    "testid": "page-element:chart",
+    "rect": {
+      "x": 276,
+      "y": 382,
+      "w": 638,
+      "h": 320
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "",
+    "aria": "Expand",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 870,
+      "y": 404,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "IT Support Requests by Urgency Level Proportion of requests ",
+    "aria": null,
+    "ph": null,
+    "testid": "page-element:chart",
+    "rect": {
+      "x": 926,
+      "y": 382,
+      "w": 638,
+      "h": 320
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "",
+    "aria": "Expand",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 1520,
+      "y": 404,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "IT Support Requests by Issue Category Count of IT support re",
+    "aria": null,
+    "ph": null,
+    "testid": "page-element:chart",
+    "rect": {
+      "x": 276,
+      "y": 714,
+      "w": 638,
+      "h": 320
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "",
+    "aria": "Expand",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 870,
+      "y": 736,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "IT Support Requests by Technician Number of support requests",
+    "aria": null,
+    "ph": null,
+    "testid": "page-element:chart",
+    "rect": {
+      "x": 926,
+      "y": 714,
+      "w": 638,
+      "h": 320
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "",
+    "aria": "Expand",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 1520,
+      "y": 744,
+      "w": 28,
+      "h": 28
+    }
+  },
+  {
+    "tag": "div",
+    "role": null,
+    "text": "",
+    "aria": null,
+    "ph": null,
+    "testid": "collab-mole-trigger",
+    "rect": {
+      "x": 1544,
+      "y": 844,
+      "w": 40,
+      "h": 40
+    }
+  },
+  {
+    "tag": "div",
+    "role": "button",
+    "text": "",
+    "aria": "Open Omni",
+    "ph": null,
+    "testid": null,
+    "rect": {
+      "x": 1544,
+      "y": 844,
+      "w": 40,
+      "h": 40
+    }
+  }
+]

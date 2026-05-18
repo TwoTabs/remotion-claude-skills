@@ -1,0 +1,140 @@
+{
+  "flowSlug": "airtable-interface-filters",
+  "capturedAt": "2026-05-07T13:00:52.154Z",
+  "recordingFile": "public/recordings/airtable-interface-filters/recording.webm",
+  "videoDurationMs": 27254,
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "Dashboard overview",
+      "caption": "This Airtable interface tracks IT support requests, with three filters at the top.",
+      "startMs": 0,
+      "interaction": "none",
+      "element": {
+        "selector": "button[role=\"combobox\"][aria-label=\"Status\"]",
+        "x": 276,
+        "y": 231.25,
+        "width": 78.84375,
+        "height": 28
+      }
+    },
+    {
+      "step": 2,
+      "label": "Open Status filter",
+      "caption": "Click the Status filter to narrow requests by workflow state.",
+      "startMs": 3803,
+      "interaction": "click",
+      "element": {
+        "selector": "button[role=\"combobox\"][aria-label=\"Status\"]",
+        "x": 276,
+        "y": 231.25,
+        "width": 78.84375,
+        "height": 28
+      }
+    },
+    {
+      "step": 3,
+      "label": "Choose Open",
+      "caption": "Pick \"Open\" to show only unresolved tickets.",
+      "startMs": 5075,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"option\"]:has-text(\"Open\"), li:has-text(\"Open\")",
+        "x": 288,
+        "y": 311,
+        "width": 208,
+        "height": 32
+      }
+    },
+    {
+      "step": 4,
+      "label": "Status filter applied",
+      "caption": "The charts now reflect only Open requests.",
+      "startMs": 8074,
+      "interaction": "none",
+      "element": {
+        "selector": "button[role=\"combobox\"][aria-label=\"Status\"]",
+        "x": 276,
+        "y": 231.25,
+        "width": 78.84375,
+        "height": 28
+      }
+    },
+    {
+      "step": 5,
+      "label": "Open Urgency filter",
+      "caption": "Open Urgency Level to layer on a second filter.",
+      "startMs": 11275,
+      "interaction": "none",
+      "element": null
+    },
+    {
+      "step": 6,
+      "label": "Choose High",
+      "caption": "Select \"High\" to focus on the urgent ones.",
+      "startMs": 12415,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"option\"]:has-text(\"High\"), li:has-text(\"High\")",
+        "x": 445,
+        "y": 375,
+        "width": 208,
+        "height": 32
+      }
+    },
+    {
+      "step": 7,
+      "label": "Combined filter",
+      "caption": "Both filters are active — Open AND High urgency.",
+      "startMs": 15408,
+      "interaction": "none",
+      "element": {
+        "selector": "button[role=\"combobox\"][aria-label=\"Urgency Level\"]",
+        "x": 366.84375,
+        "y": 231.25,
+        "width": 126.15625,
+        "height": 28
+      }
+    },
+    {
+      "step": 8,
+      "label": "Open Technician filter",
+      "caption": "Finally, filter by Assigned Technician.",
+      "startMs": 18609,
+      "interaction": "none",
+      "element": null
+    },
+    {
+      "step": 9,
+      "label": "Choose Wyn Villanueva",
+      "caption": "Pick a technician to see their workload.",
+      "startMs": 19750,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"option\"]:has-text(\"Wyn\"), li:has-text(\"Wyn\")",
+        "x": 646,
+        "y": 311,
+        "width": 208,
+        "height": 32
+      }
+    },
+    {
+      "step": 10,
+      "label": "All filters active",
+      "caption": "Three filters working together pinpoint exactly what each technician is handling.",
+      "startMs": 22753,
+      "interaction": "none",
+      "element": {
+        "selector": "button[role=\"combobox\"][aria-label=\"Status\"]",
+        "x": 276,
+        "y": 231.25,
+        "width": 78.84375,
+        "height": 28
+      }
+    }
+  ]
+}

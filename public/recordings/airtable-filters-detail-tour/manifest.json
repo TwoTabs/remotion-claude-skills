@@ -1,0 +1,460 @@
+{
+  "flowSlug": "airtable-filters-detail-tour",
+  "capturedAt": "2026-05-07T13:20:15.867Z",
+  "recordingFile": "public/recordings/airtable-filters-detail-tour/recording.webm",
+  "videoDurationMs": 74996,
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "Status",
+      "caption": "",
+      "startMs": 2931,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 276,
+        "y": 183,
+        "width": 79,
+        "height": 28
+      }
+    },
+    {
+      "step": 2,
+      "label": "div click",
+      "caption": "",
+      "startMs": 4347,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 297,
+        "y": 303,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 3,
+      "label": "Total IT Support Requests",
+      "caption": "",
+      "startMs": 5347,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 300,
+        "y": 245,
+        "width": 540,
+        "height": 19
+      }
+    },
+    {
+      "step": 4,
+      "label": "Reset",
+      "caption": "",
+      "startMs": 6566,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 783,
+        "y": 183,
+        "width": 50,
+        "height": 28
+      }
+    },
+    {
+      "step": 5,
+      "label": "Urgency Level",
+      "caption": "",
+      "startMs": 7782,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 367,
+        "y": 183,
+        "width": 126,
+        "height": 28
+      }
+    },
+    {
+      "step": 6,
+      "label": "div click",
+      "caption": "",
+      "startMs": 8866,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 388,
+        "y": 335,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 7,
+      "label": "div click",
+      "caption": "",
+      "startMs": 10864,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 388,
+        "y": 303,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 8,
+      "label": "Total IT Support Requests 6",
+      "caption": "",
+      "startMs": 12647,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 292,
+        "y": 237,
+        "width": 600,
+        "height": 75
+      }
+    },
+    {
+      "step": 9,
+      "label": "Reset",
+      "caption": "",
+      "startMs": 13547,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 827,
+        "y": 183,
+        "width": 50,
+        "height": 28
+      }
+    },
+    {
+      "step": 10,
+      "label": "Assigned Technician",
+      "caption": "",
+      "startMs": 14582,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 505,
+        "y": 183,
+        "width": 164,
+        "height": 28
+      }
+    },
+    {
+      "step": 11,
+      "label": "div click",
+      "caption": "",
+      "startMs": 15380,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 526,
+        "y": 271,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 12,
+      "label": "Reset",
+      "caption": "",
+      "startMs": 17614,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 824,
+        "y": 183,
+        "width": 50,
+        "height": 28
+      }
+    },
+    {
+      "step": 13,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 20365,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 870,
+        "y": 249,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 14,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 24247,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1566,
+        "y": 16,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 15,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 25530,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1514,
+        "y": 249,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 16,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 28398,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1566,
+        "y": 16,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 17,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 29647,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 870,
+        "y": 362,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 18,
+      "label": "Tom Nguyen",
+      "caption": "",
+      "startMs": 31182,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 723,
+        "y": 549,
+        "width": 358,
+        "height": 38
+      }
+    },
+    {
+      "step": 19,
+      "label": "Priya Patel",
+      "caption": "",
+      "startMs": 32230,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 723,
+        "y": 587,
+        "width": 358,
+        "height": 38
+      }
+    },
+    {
+      "step": 20,
+      "label": "Emily Chen",
+      "caption": "",
+      "startMs": 32930,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 723,
+        "y": 626,
+        "width": 358,
+        "height": 38
+      }
+    },
+    {
+      "step": 21,
+      "label": "Close",
+      "caption": "",
+      "startMs": 34813,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1560,
+        "y": 10,
+        "width": 28,
+        "height": 28
+      }
+    },
+    {
+      "step": 22,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 38281,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1514,
+        "y": 362,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 23,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 41881,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1566,
+        "y": 16,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 24,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 44880,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 870,
+        "y": 451,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 25,
+      "label": "Software",
+      "caption": "",
+      "startMs": 48665,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 811,
+        "y": 462,
+        "width": 59,
+        "height": 44
+      }
+    },
+    {
+      "step": 26,
+      "label": "Network",
+      "caption": "",
+      "startMs": 49815,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 894,
+        "y": 462,
+        "width": 55,
+        "height": 28
+      }
+    },
+    {
+      "step": 27,
+      "label": "Access/Permissions",
+      "caption": "",
+      "startMs": 51431,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 972,
+        "y": 466,
+        "width": 130,
+        "height": 20
+      }
+    },
+    {
+      "step": 28,
+      "label": "Close",
+      "caption": "",
+      "startMs": 53164,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1560,
+        "y": 10,
+        "width": 28,
+        "height": 28
+      }
+    },
+    {
+      "step": 29,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 54930,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1514,
+        "y": 459,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 30,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 57815,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1566,
+        "y": 16,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 31,
+      "label": "Expand",
+      "caption": "",
+      "startMs": 61880,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 1508,
+        "y": 234,
+        "width": 28,
+        "height": 28
+      }
+    },
+    {
+      "step": 32,
+      "label": "Back to Dashboard",
+      "caption": "",
+      "startMs": 64330,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 260,
+        "y": 12,
+        "width": 163,
+        "height": 32
+      }
+    }
+  ]
+}

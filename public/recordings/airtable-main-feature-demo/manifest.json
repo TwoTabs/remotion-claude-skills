@@ -1,0 +1,138 @@
+{
+  "flowSlug": "airtable-main-feature-demo",
+  "capturedAt": "2026-05-07T10:41:08.363Z",
+  "recordingFile": "public/recordings/airtable-main-feature-demo/recording.webm",
+  "videoDurationMs": 29673,
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "6.37",
+      "caption": "",
+      "startMs": 2237,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 545,
+        "y": 426,
+        "width": 164,
+        "height": 20
+      }
+    },
+    {
+      "step": 2,
+      "label": "0.00",
+      "caption": "",
+      "startMs": 3286,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 545,
+        "y": 464,
+        "width": 164,
+        "height": 20
+      }
+    },
+    {
+      "step": 3,
+      "label": "62.5%37.5%ERPRInternal InitiativesProject Name",
+      "caption": "",
+      "startMs": 6287,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 52,
+        "y": 323,
+        "width": 720,
+        "height": 232
+      }
+    },
+    {
+      "step": 4,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 9438,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 60,
+        "y": 825,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 5,
+      "label": "Select Week is 04/20/26-04/26/26",
+      "caption": "",
+      "startMs": 11688,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 36,
+        "y": 610,
+        "width": 263,
+        "height": 28
+      }
+    },
+    {
+      "step": 6,
+      "label": "div click",
+      "caption": "",
+      "startMs": 13719,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 57,
+        "y": 366,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 7,
+      "label": "04/27/26-05/03/26",
+      "caption": "",
+      "startMs": 15019,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 48,
+        "y": 390,
+        "width": 264,
+        "height": 32
+      }
+    },
+    {
+      "step": 8,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 17786,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 60,
+        "y": 647,
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "step": 9,
+      "label": "svg click",
+      "caption": "",
+      "startMs": 19737,
+      "interaction": "click",
+      "element": {
+        "selector": "captured",
+        "x": 60,
+        "y": 577,
+        "width": 16,
+        "height": 16
+      }
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "flowSlug": "airtable-it-support-form",
+  "capturedAt": "2026-05-07T12:04:13.603Z",
+  "recordingFile": "public/recordings/airtable-it-support-form/recording.webm",
+  "videoDurationMs": 36200,
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "steps": [
+    {
+      "step": 1,
+      "label": "Form overview",
+      "caption": "A simple Airtable form for filing IT support tickets.",
+      "startMs": 0,
+      "interaction": "none",
+      "element": {
+        "selector": "h2:has-text(\"New IT Support Request\")",
+        "x": 248,
+        "y": 64,
+        "width": 345.375,
+        "height": 46.5
+      }
+    },
+    {
+      "step": 2,
+      "label": "Requester Name",
+      "caption": "Start with your name.",
+      "startMs": 3530,
+      "interaction": "fill",
+      "element": {
+        "selector": "textarea",
+        "x": 248,
+        "y": 220.5,
+        "width": 546,
+        "height": 32
+      },
+      "typedValue": "Alex Morgan"
+    },
+    {
+      "step": 3,
+      "label": "Email Address",
+      "caption": "Then your email so IT can follow up.",
+      "startMs": 6396,
+      "interaction": "fill",
+      "element": {
+        "selector": "textarea[nth=1]",
+        "x": 806,
+        "y": 220.5,
+        "width": 546,
+        "height": 32
+      },
+      "typedValue": "alex.morgan@example.com"
+    },
+    {
+      "step": 4,
+      "label": "Open Department dropdown",
+      "caption": "Pick the department you work in.",
+      "startMs": 9239,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"combobox\"]",
+        "x": 248,
+        "y": 290,
+        "width": 1104,
+        "height": 32
+      }
+    },
+    {
+      "step": 5,
+      "label": "Choose Marketing",
+      "caption": "",
+      "startMs": 10083,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"option\"]:has-text(\"Marketing\"), li:has-text(\"Marketing\")",
+        "x": 260,
+        "y": 497.578125,
+        "width": 1080,
+        "height": 46.796875
+      }
+    },
+    {
+      "step": 6,
+      "label": "Open Device Type",
+      "caption": "Tell IT what kind of device you are on.",
+      "startMs": 13459,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"combobox\"][nth=1]",
+        "x": 248,
+        "y": 111.6875,
+        "width": 546,
+        "height": 32
+      }
+    },
+    {
+      "step": 7,
+      "label": "Choose Laptop",
+      "caption": "",
+      "startMs": 14238,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"option\"]:has-text(\"Laptop\"), li:has-text(\"Laptop\")",
+        "x": 260,
+        "y": 272.78125,
+        "width": 522,
+        "height": 46.796875
+      }
+    },
+    {
+      "step": 8,
+      "label": "Open Operating System",
+      "caption": "And which operating system it runs.",
+      "startMs": 16700,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"combobox\"][nth=2]",
+        "x": 806,
+        "y": 111.6875,
+        "width": 546,
+        "height": 32
+      }
+    },
+    {
+      "step": 9,
+      "label": "Choose macOS",
+      "caption": "",
+      "startMs": 17469,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"option\"]:has-text(\"macOS\"), li:has-text(\"macOS\")",
+        "x": 818,
+        "y": 272.78125,
+        "width": 522,
+        "height": 46.796875
+      }
+    },
+    {
+      "step": 10,
+      "label": "Open Issue Category",
+      "caption": "Categorise the problem so it routes to the right team.",
+      "startMs": 20838,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"combobox\"][nth=3]",
+        "x": 248,
+        "y": 198.375,
+        "width": 546,
+        "height": 32
+      }
+    },
+    {
+      "step": 11,
+      "label": "Choose Software",
+      "caption": "",
+      "startMs": 21600,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"option\"]:has-text(\"Software\"), li:has-text(\"Software\")",
+        "x": 260,
+        "y": 358.78125,
+        "width": 522,
+        "height": 46.796875
+      }
+    },
+    {
+      "step": 12,
+      "label": "Open Urgency Level",
+      "caption": "Set how urgent it is — be honest with this one.",
+      "startMs": 24066,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"combobox\"][nth=4]",
+        "x": 806,
+        "y": 198.375,
+        "width": 546,
+        "height": 32
+      }
+    },
+    {
+      "step": 13,
+      "label": "Choose High",
+      "caption": "",
+      "startMs": 24836,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"option\"]:has-text(\"High\"), li:has-text(\"High\")",
+        "x": 818,
+        "y": 405.578125,
+        "width": 522,
+        "height": 46.796875
+      }
+    },
+    {
+      "step": 14,
+      "label": "Focus description",
+      "caption": "Describe what is going wrong, with steps you have tried.",
+      "startMs": 27299,
+      "interaction": "click",
+      "element": {
+        "selector": "[role=\"textbox\"][nth=2]",
+        "x": 248,
+        "y": 267.875,
+        "width": 1104,
+        "height": 72
+      }
+    },
+    {
+      "step": 15,
+      "label": "Type description",
+      "caption": "",
+      "startMs": 27865,
+      "interaction": "fill",
+      "element": null,
+      "typedValue": "Adobe Creative Cloud apps crash on launch after the latest macOS update. Restarted, reinstalled — no fix. Blocking work on Q3 campaign assets."
+    },
+    {
+      "step": 16,
+      "label": "Ready to submit",
+      "caption": "Once everything looks right, click Submit and IT picks it up.",
+      "startMs": 31710,
+      "interaction": "none",
+      "element": {
+        "selector": "button[aria-label=\"Submit\"]",
+        "x": 1284.1875,
+        "y": 708.0625,
+        "width": 67.8125,
+        "height": 32
+      }
+    }
+  ]
+}

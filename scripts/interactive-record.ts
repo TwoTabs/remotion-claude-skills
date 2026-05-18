@@ -34,7 +34,10 @@ if (!FLOW_SLUG || !START_URL) {
 const RECORDING_DIR = path.join('public', 'recordings', FLOW_SLUG);
 const VIDEO_FINAL   = path.join(RECORDING_DIR, 'recording.webm');
 const MANIFEST_PATH = path.join(RECORDING_DIR, 'manifest.json');
-const VIEWPORT      = { width: 1920, height: 1080 } as const;
+const VIEWPORT      = {
+  width:  Number(process.env.IR_WIDTH)  || 1920,
+  height: Number(process.env.IR_HEIGHT) || 1080,
+} as const;
 
 // Signal files — Claude creates these to advance phases instead of Enter
 const SIGNAL_START = path.join(RECORDING_DIR, '.ir-start');
